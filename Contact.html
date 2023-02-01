@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <link rel="stylesheet" href="./css/Contact.css" type="text/css">
+    <title>Contact Form</title>
+</head>
+
+<body class="xx">
+    <header>
+        <h1>Contact Us</h1>
+    </header>
+    <main>
+        <form action="/" class="Form" method="get">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <div class="Form-inner">
+                <section>
+                    <h2>How can we help you?</h2>
+                    <ul>
+                        <li>
+                            <label for="username">Your Name</label>
+                            <input type="text" name="user-name" id="username" placeholder="Your Full Name" required />
+                        </li>
+                        <li>
+                            <label for="useremail">Your E-Mail Address</label>
+                            <input type="email" name="user-email" id="useremail" placeholder="Your E-Mail Address" required />
+                        </li>
+                        <li>
+                            <label for="userphone">Your Phone Number</label>
+                            <input type="tel" name="user-phone" id="userphone" placeholder="+9899999999" required min="5" max="10" size="10" />
+                        </li>
+                        <li>
+                            <label for="usermessage">Your Message</label>
+                            <textarea name="user-message" id="usermessage" cols="" rows="8" minlength="10" maxlength="200" placeholder="Hi, This is my problem how can I solve it?..."></textarea>
+                        </li>
+                    </ul>
+                </section>
+                <section>
+                    <h2>How did you find us?</h2>
+                    <select name="channel" id="channel" required>
+                    <option value="">--Please select an option--</option>
+                    <option value="web-search">Web Search</option>
+                    <option value="instagram">Instagram</option>
+                    <option value="youtube">You Tube</option>
+                    <option value="facebook">Facebook</option>
+                    <option value="twitter">Twitter</option>
+                </select>
+                </section>
+                <section>
+                    <h2>How should we reply?</h2>
+                    <ul>
+                        <li class="form-control-inline">
+                            <input type="radio" name="reply" id="reply-phone" value="phone" required />
+                            <label for="callme">Call me</label>
+                        </li>
+                        <li class="form-control-inline">
+                            <input type="radio" name="reply" id="reply-email" value="email" required />
+                            <label for="replyemail">Send me an email</label>
+                        </li>
+                        <li class="form-control-inline">
+                            <input type="radio" name="reply" id="reply-none" value="none" required />
+                            <label for="dontreply">Don't reply</label>
+                        </li>
+                    </ul>
+                </section>
+                <section>
+                    <div class="form-control-inline">
+                        <input type="checkbox" name="terms" id="terms" required />
+                        <label for="terms">Accept Terms & conditions?</label>
+                    </div>
+                </section>
+                <section class="form-btn">
+                    <button type="reset" id="clearbtn" class="btn-empty">Clear</button>
+                    <button type="submit" id="submitbtn" class="btn-filled">Submit</button>
+                </section>
+            </div>
+        </form>
+    </main>
+</body>
+
+</html>
